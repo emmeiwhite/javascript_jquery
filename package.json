@@ -1,0 +1,14 @@
+{
+  "name": "portfolio_website",
+  "version": "1.0.0",
+  "description": "a nice looking porfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "emmei"
+  ],
+  "author": "imranrafiqrather",
+  "license": "ISC"
+}
