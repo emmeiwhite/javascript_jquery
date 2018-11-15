@@ -1,7 +1,7 @@
 // this is the main css file that will be served to the production 
 
 $primary-color:#444;
-$text-color:rgb(253, 244, 244);
+$secondary-color:#eece1a;
 
 
 *{
@@ -35,6 +35,42 @@ h3{
         padding:0.2rem 1rem;
         background:rgba(lighten($primary-color,2),0.5)
     }
-
-    
 }
+
+// Links 
+
+a{
+    color:#fff;
+    text-decoration:none;
+}
+
+
+// Header
+
+header{
+    position:fixed;
+    z-index:2; // the greater the z-index, the closer it is towards us
+    width:100%;
+}
+
+.text-secondary{
+    color:$secondary-color;
+}
+
+main{
+    padding:4rem;
+    height:100%;
+
+    .icons{
+        margin-top:1rem;
+
+        a{
+            padding:0.4rem;
+
+            &:hover{
+                color:$secondary-color;
+            }
+        }
+    }
+}
+
