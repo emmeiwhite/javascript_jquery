@@ -3,7 +3,38 @@
 $primary-color:#444;
 $text-color:rgb(253, 244, 244);
 
+
+*{
+    box-sizing:border-box;
+}
+html{
+    font-size:10px; // rem works w.r.t html basic font-size
+}
 body{
     background:$primary-color;
-    color:$text-color;
+    color:#fff;
+    height:100%;
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+// Headings 
+h1,
+h2,
+h3{
+    margin:0;
+    font-weight:400;
+
+    &.lg-heading{
+        font-size:6rem;
+    }
+
+    &.sm-heading{
+        margin-bottom:2rem;
+        padding:0.2rem 1rem;
+        background:rgba(lighten($primary-color,2),0.5)
+    }
+
+    
 }
