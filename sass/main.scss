@@ -1,7 +1,9 @@
-$primary-color:#ccc;
-$color-decided:rgb(54, 20, 20);
+// this is the main css file that will be served to the production 
+
+$primary-color:#444;
+$text-color:rgb(253, 244, 244);
 
 body{
     background:$primary-color;
-    color:$color-decided;
+    color:$text-color;
 }
