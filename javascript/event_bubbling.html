@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .outer {
+      height: 300px;
+      width: 300px;
+      background: #00f;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .inner {
+      height: 100px;
+      width: 150px;
+      background: orange;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".inner").click(function (e) {
+        e.stopPropagation();
+        alert("inner");
+      });
+
+      $(".outer").click(function () {
+        alert("outer");
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <div class="outer">
+    <div class="inner"></div>
+  </div>
+</body>
+
+</html>
